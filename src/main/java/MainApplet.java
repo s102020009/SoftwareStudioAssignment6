@@ -7,10 +7,6 @@ import processing.core.PApplet;
 import processing.data.JSONArray;
 import processing.data.JSONObject;
 
-/**
-* This class is for sketnodeing outcome using Processing
-* You can do major UI control and some visualization in this class.  
-*/
 @SuppressWarnings("serial")
 public class MainApplet extends PApplet{
 	
