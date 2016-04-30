@@ -47,6 +47,24 @@ public class MainApplet extends PApplet{
 	@Override
 	public void draw() {
 		this.background(255);
+		this.ellipseMode(RADIUS);
+		this.textAlign(CENTER, CENTER);
+		this.fill(169, 139, 125);
+		this.textSize(32);
+		this.text(this.info, this.width/2, 30);
+		//this.network.display();
+		this.addAll.display();
+		this.clear.display();
+		if(!this.mousePressed){
+			this.nodeLabel.setLabel("");
+		}
+		for(Node node: this.episodes.get(this.currentEP)){
+			node.display();
+			if(node.mouseOver()){
+				this.nodeLabel.setLabel(node.getLabel());
+			}
+		}
+		nodeLabel.display();
 	}
 	
 	//trigger buttons
@@ -76,9 +94,48 @@ public class MainApplet extends PApplet{
 	
 	//set current episode
 	private void setEP(int EP) {
+		this.currentEP = EP;
+		this.info = "Star Wars " + String.valueOf(EP+1);
+		this.network.clearAll();
 	}
 	
 	//load data
 	private void loadData(){
+		JSONObject data;
+		JSONArray nodes, links;	
+		int maxRow = 10;
+		int offset = 50;
+		
+		for(int i = 0; i < 7; i++){			
+			data = this.loadJSONObject(this.path + this.file[i]);
+			nodes = data.getJSONArray("nodes");
+			links = data.getJSONArray("links");
+			ArrayList<Node> episode = new ArrayList<Node>();
+			int row = 0, col = 0;
+			
+			for(int j = 0; j < nodes.size(); j++){
+				JSONObject node = nodes.getJSONObject(j);
+				String label = node.getString("name");
+				String coloru = node.getString("colour");
+				episode.add(new Node(this, label, coloru, (col+2)*offset, (row+2)*offset));
+				
+				if(row < maxRow-1){
+					row++;
+				}else{
+					row = 0;
+					col++;
+				}		
+			}
+			
+			for(int j = 0; j < links.size(); j++){
+				JSONObject link = links.getJSONObject(j);
+				int source = link.getInt("source");
+				int target = link.getInt("target");
+				float value = (float) link.getInt("value");
+				episode.get(source).addTarget(episode.get(target), value);
+			}
+			
+			this.episodes.add(episode);
+		}
 	}
 }
