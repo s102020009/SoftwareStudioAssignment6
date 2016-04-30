@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="main.java.Network" project="Assignment6" 
     file="/Assignment6/src/main/java/Network.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="200" x="523" y="852"/>    
+    <position height="243" width="200" x="495" y="819"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="main.java.Node" project="Assignment6" file="/Assignment6/src/main/java/Node.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="315" width="222" x="462" y="1135"/>    
+    <position height="315" width="222" x="434" y="1102"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="main.java.NodeLabel" project="Assignment6" 
     file="/Assignment6/src/main/java/NodeLabel.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="138" x="763" y="852"/>    
+    <position height="135" width="138" x="735" y="819"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="main.java.Button" project="Assignment6" 
     file="/Assignment6/src/main/java/Button.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="245" x="196" y="852"/>    
+    <position height="153" width="245" x="168" y="819"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="main.java.Main" project="Assignment6" file="/Assignment6/src/main/java/Main.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="113" x="263" y="106"/>    
+    <position height="135" width="113" x="235" y="73"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="main.java.MainApplet" project="Assignment6" 
     file="/Assignment6/src/main/java/MainApplet.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="369" width="214" x="248" y="443"/>    
+    <position height="369" width="214" x="220" y="410"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <interface id="7" language="java" name="main.java.DetectMouse" project="Assignment6" 
     file="/Assignment6/src/main/java/DetectMouse.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="131" x="462" y="1490"/>    
+    <position height="81" width="131" x="434" y="1457"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,47 +66,53 @@
   </interface>  
   <class id="8" language="java" name="main.java.Component" project="Assignment6" 
     file="/Assignment6/src/main/java/Component.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="220" x="483" y="106"/>    
+    <position height="297" width="220" x="455" y="73"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="9">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="10" name="nodes"/>      
-      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="12">    
+  <realization id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <generalization id="10">    
+    <bendpoint x="604" y="410"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <association id="11">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="13" name="nodeLabel"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
+      <attribute id="12" name="nodeLabel"/>      
+      <multiplicity id="13" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="15">    
-    <bendpoint x="632" y="443"/>    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <association id="16">    
+  <association id="14">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="17" name="addAll"/>      
-      <multiplicity id="18" minimum="0" maximum="1"/>    
+      <attribute id="15" name="clear"/>      
+      <multiplicity id="16" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="19">    
-    <bendpoint x="217" y="443"/>    
+  <generalization id="17">    
+    <bendpoint x="189" y="410"/>    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
+  <realization id="18">    
+    <bendpoint x="686" y="1102"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="19">    
+    <bendpoint x="310" y="1102"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
   <association id="20">    
     <end type="SOURCE" refId="8" navigable="false">      
       <attribute id="21" name="parent"/>      
@@ -116,55 +122,49 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="23">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="24" name="network"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="26">    
-    <bendpoint x="714" y="1135"/>    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="7"/>  
-  </realization>  
-  <generalization id="27">    
-    <bendpoint x="492" y="852"/>    
-    <bendpoint x="492" y="443"/>    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="8"/>  
-  </generalization>  
-  <realization id="28">    
-    <bendpoint x="338" y="1135"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="7"/>  
-  </realization>  
-  <association id="29">    
-    <bendpoint x="471" y="852"/>    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="30" name="draggingNode"/>      
-      <multiplicity id="31" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="24" name="nodes"/>      
+      <multiplicity id="25" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="26">    
+    <bendpoint x="443" y="819"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="27" name="draggingNode"/>      
+      <multiplicity id="28" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="29">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="30" name="network"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <generalization id="32">    
-    <bendpoint x="513" y="443"/>    
-    <end type="SOURCE" refId="1"/>    
+    <bendpoint x="464" y="819"/>    
+    <bendpoint x="464" y="410"/>    
+    <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
   <association id="33">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="34" name="clear"/>      
+      <attribute id="34" name="addAll"/>      
       <multiplicity id="35" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="36">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="7"/>  
-  </realization>  
+  <generalization id="36">    
+    <bendpoint x="485" y="410"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
