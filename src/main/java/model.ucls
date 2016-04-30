@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.1.9" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
-  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="main.java.Network" project="Assignment6" 
     file="/Assignment6/src/main/java/Network.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="243" width="200" x="523" y="852"/>    
