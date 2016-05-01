@@ -90,6 +90,7 @@ public class Network extends Component implements DetectMouse{
 	
 	//delete all nodes
 	public void clearAll(){
+		this.nodes = new ArrayList<Node>();
 	}
 	
 	//add all nodes from list
