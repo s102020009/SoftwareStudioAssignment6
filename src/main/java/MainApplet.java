@@ -106,7 +106,15 @@ public class MainApplet extends PApplet{
 	@Override
 	public void mouseReleased(){
 		if(this.draggingNode != null){
-			this.draggingNode.resetPosition();
+			if(this.network.mouseOver() && !this.network.contain(draggingNode)){
+				this.network.addNode(draggingNode);
+			}else if(!this.network.mouseOver() && this.network.contain(draggingNode)){
+				this.network.delNode(draggingNode);
+			}else if(!this.network.mouseOver() && !this.network.contain(draggingNode)){
+				this.draggingNode.resetPosition();
+			}else if(this.network.mouseOver() && this.network.contain(draggingNode)){
+				this.network.update();
+			}
 			this.draggingNode = null;
 		}
 	}
