@@ -90,6 +90,21 @@ public class MainApplet extends PApplet{
 	//change current episode
 	@Override
 	public void keyPressed(){
+		if(this.key == '1'){
+			this.setEP(0);
+		}else if(this.key == '2'){
+			this.setEP(1);
+		}else if(this.key == '3'){
+			this.setEP(2);
+		}else if(this.key == '4'){
+			this.setEP(3);
+		}else if(this.key == '5'){
+			this.setEP(4);
+		}else if(this.key == '6'){
+			this.setEP(5);
+		}else if(this.key == '7'){
+			this.setEP(6);
+		}
 	}
 	
 	//set current episode
