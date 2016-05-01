@@ -3,7 +3,7 @@
 ## Explanation of the Design
 
 ### UML design
-![alt tag](/model.png)
+![UML design](/model.png)
 
 ### Operation
 + Clicking on the button "Add All": users can add all the characters into network to be analyzed.
@@ -14,3 +14,20 @@
 
 ### Visualization
 + The width of each link is visualized based on the value of the link.
++ The little circle is animated while dragging / adding to network / deleting from network / auto-arranging in network
+
+## Team member & Contribution
+
+TA provided :
++ Main.java
+
+Member 1 : Kuan-Yu Chang
++ Component.java
++ DetectMouse.java
++ MainApplet.java
++ Network.java
+
+Member 2 : Louis Huang
++ Button.java
++ Node.java
++ NodeLabel.java
