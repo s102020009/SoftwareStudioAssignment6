@@ -67,24 +67,48 @@ public class MainApplet extends PApplet{
 		nodeLabel.display();
 	}
 	
-	//trigger buttons
-	@Override
+	/*
+	 * called after a mouse button has been pressed and then released
+	 * trigger buttons
+	 */
 	public void mouseClicked(){
 	}
 	
-	//set node to drag
+	/*
+	 * called once after every time a mouse button is pressed
+	 * set node to drag
+	 */
 	@Override
 	public void mousePressed(){
+		for(Node node: this.episodes.get(this.currentEP)){
+			if(node.mouseOver()){
+				this.draggingNode = node;
+			}
+		}
 	}
 	
-	//set coordinate of dragging node
+	/*
+	 * called once every time the mouse moves while a mouse button is pressed
+	 * set coordinate of dragging node
+	 */
 	@Override
 	public void mouseDragged(){
+		if(this.draggingNode != null){
+			Ani.to(this.draggingNode, 0.1f, "currentX", this.mouseX);
+			Ani.to(this.draggingNode, 0.1f, "currentY", this.mouseY);
+		}
 	}
 	
-	//add / delete dragging node to / from network
+	/*
+	 * called every time a mouse button is released. 
+	 * add/delete dragging node to/from network
+	 */
 	@Override
 	public void mouseReleased(){
+		if(this.draggingNode != null){
+			this.draggingNode.resetPosition();
+			this.draggingNode = null;
+		}
 	}
 	
 	//change current episode
