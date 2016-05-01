@@ -52,7 +52,7 @@ public class MainApplet extends PApplet{
 		this.fill(169, 139, 125);
 		this.textSize(32);
 		this.text(this.info, this.width/2, 30);
-		//this.network.display();
+		this.network.display();
 		this.addAll.display();
 		this.clear.display();
 		if(!this.mousePressed){
