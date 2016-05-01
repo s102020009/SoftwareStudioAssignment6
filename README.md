@@ -3,7 +3,7 @@
 ## Explanation of the Design
 
 ### UML design
-![image](/model.png)
+![image](/pic/model.png)
 
 ### Operation
 + Clicking on the button "Add All": users can add all the characters into network to be analyzed.
