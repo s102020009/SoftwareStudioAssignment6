@@ -3,7 +3,7 @@
 ## Explanation of the Design
 
 ### UML design
-![UML design](/model.png)
+![UML](/model.png)
 
 ### Operation
 + Clicking on the button "Add All": users can add all the characters into network to be analyzed.
@@ -15,6 +15,9 @@
 ### Visualization
 + The width of each link is visualized based on the value of the link.
 + The little circle is animated while dragging / adding to network / deleting from network / auto-arranging in network
+
+#### Dragging node
+![dragging](/pic/dragging.gif)
 
 ## Team member & Contribution
 
