@@ -21,15 +21,13 @@
 TA provided :
 + Main.java
 
-Member 1 : Kuan-Yu Chang
-Student ID : 102020009
+Member 1 : Kuan-Yu Chang (102020009)
 + Component.java
 + DetectMouse.java
 + MainApplet.java
 + Network.java
 
-Member 2 : Louis Huang
-Student ID : 103062211
+Member 2 : Louis Huang (103062211)
 + Button.java
 + Node.java
 + NodeLabel.java
