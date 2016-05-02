@@ -90,10 +90,17 @@ public class Network extends Component implements DetectMouse{
 	
 	//delete all nodes
 	public void clearAll(){
-		this.nodes = new ArrayList<Node>();
+		while(!this.nodes.isEmpty()){
+			this.delNode(this.nodes.get(0));
+		}
 	}
 	
 	//add all nodes from list
 	public void addALL(ArrayList<Node> nodes) {
+		for(Node node: nodes){
+			if(!this.contain(node)){
+				this.addNode(node);
+			}
+		}
 	}
 }

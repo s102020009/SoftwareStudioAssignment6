@@ -3,7 +3,7 @@
 ## Explanation of the Design
 
 ### UML design
-![image](/pic/model.png)
+![UML](/pic/model.png)
 
 ### Operation
 + Clicking on the button "Add All": users can add all the characters into network to be analyzed.
@@ -17,10 +17,16 @@
 + The little circle is animated while dragging / adding to network / deleting from network / auto-arranging in network
 
 ##### Add node
-![image](/pic/Add.gif)
+![Add node](/pic/Add.gif)
 
 #### Delete node
-![image](/pic/Delete.gif)
+![Delete node](/pic/Delete.gif)
+
+#### Add all
+![Add all](/pic/AddAll.gif)
+
+#### Clear
+![Clear](/pic/Clear.gif)
 
 ## Team member & Contribution
 

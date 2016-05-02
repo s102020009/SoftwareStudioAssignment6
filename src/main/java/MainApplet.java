@@ -72,6 +72,11 @@ public class MainApplet extends PApplet{
 	 * trigger buttons
 	 */
 	public void mouseClicked(){
+		if(this.addAll.mouseOver()){
+			this.network.addALL(this.episodes.get(this.currentEP));
+		}else if(this.clear.mouseOver()){
+			this.network.clearAll();
+		}
 	}
 	
 	/*
