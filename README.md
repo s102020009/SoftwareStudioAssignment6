@@ -1,5 +1,12 @@
 # Software Studio Assignment 6
 
+## Requirement
+Write a program to make users perceive the interaction between characters in the movie Star Wars for each episodes (in visualization or audiation). In this program, users expect to understand the network structure, such as the interaction of the two specified characters, in a format other than just texts.</br>
+The data set was organized by Evelina Gabasova [1], in JSON format on Github.</br>
+
+Reference</br>
+[1] Date set: https://github.com/evelinag/StarWars-social-network
+
 ## Explanation of the Design
 
 ### UML design
@@ -16,16 +23,24 @@
 + The width of each link is visualized based on the value of the link.
 + The little circle is animated while dragging / adding to network / deleting from network / auto-arranging in network
 
-##### Add node
+  
+  Add node
+  
 ![Add node](/pic/Add.gif)
 
-#### Delete node
+  
+  Delete node
+  
 ![Delete node](/pic/Delete.gif)
 
-#### Add all
+  
+  Add all
+  
 ![Add all](/pic/AddAll.gif)
 
-#### Clear
+  
+  Clear
+  
 ![Clear](/pic/Clear.gif)
 
 ## Team member & Contribution
