@@ -6,19 +6,19 @@ Write a program to make users perceive the interaction between characters in the
   The data set was organized by Evelina Gabasova [1], in JSON format on Github.
   
   
-  Reference
+##### Reference
   
 [1] Date set: https://github.com/evelinag/StarWars-social-network
 
 ## Explanation of the Design
 
   
-  UML design
+##### UML design
   
 ![UML](/pic/model.png)
 
   
-  Operation
+##### Operation
   
 + Clicking on the button "Add All": users can add all the characters into network to be analyzed.
 + Clicking on the button "Clear": users can remove all the characters from network.
@@ -27,28 +27,28 @@ Write a program to make users perceive the interaction between characters in the
 + By pressing key 1~7 on the keyboard, users can switch between episodes.
 
   
-  Visualization
+##### Visualization
   
 + The width of each link is visualized based on the value of the link.
 + The little circle is animated while dragging / adding to network / deleting from network / auto-arranging in network
 
   
-  Add node
+##### Add node
   
 ![Add node](/pic/Add.gif)
 
   
-  Delete node
+##### Delete node
   
 ![Delete node](/pic/Delete.gif)
 
   
-  Add all
+##### Add all
   
 ![Add all](/pic/AddAll.gif)
 
   
-  Clear
+##### Clear
   
 ![Clear](/pic/Clear.gif)
 
